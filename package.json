@@ -1,0 +1,21 @@
+{
+  "name": "netlify-linebot-boilerplate",
+  "version": "1.0.0",
+  "description": "a simple linebot hosted by Netlify example",
+  "main": "./src/server.mts",
+  "repository": "https://github.com/yudzuru/netlify-linebot-boilerplate",
+  "author": "Lillian Kwok",
+  "license": "MIT",
+  "scripts": {
+    "dev": "netlify dev",
+    "deploy" : "netlify deploy"
+  },
+  "dependencies": {
+    "@line/bot-sdk": "^8.4.0",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "luxon": "^3.4.4",
+    "netlify": "^13.1.14",
+    "serverless-http": "^3.2.0"
+  }
+}

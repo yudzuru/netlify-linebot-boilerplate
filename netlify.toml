@@ -1,0 +1,15 @@
+[build]
+  functions = "src/" # netlify dev uses this directory to scaffold and serve your functions
+
+[dev]
+  port = 8888
+  targetPort = 3000
+
+[functions]
+  external_node_modules = ["express"]
+  node_bundler = "esbuild"
+[[redirects]]
+  force = true
+  from = "/server/*"
+  status = 200
+  to = "/.netlify/functions/server/:splat"
